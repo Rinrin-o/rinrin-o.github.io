@@ -1,21 +1,152 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rinrin-o Apps</title>
-  <style>
-    body { font-family: -apple-system, "Hiragino Sans", sans-serif; max-width: 640px; margin: 40px auto; padding: 0 20px; color: #333; }
-    h1 { font-size: 1.5em; }
-    a { color: #007aff; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rinrin-o Apps</title>
+    <style>
+        :root {
+            --primary-color: #007aff; /* iOS Blue */
+            --text-color: #1c1c1e;
+            --sub-text-color: #8e8e93;
+            --bg-color: #f2f2f7;
+            --card-bg: #ffffff;
+            --border-color: #e5e5ea;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans JP", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 40px auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 12px;
+            margin-top: 0;
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            position: relative;
+            padding-left: 10px;
+        }
+
+        h2::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 4px;
+            bottom: 4px;
+            width: 4px;
+            background-color: var(--primary-color);
+            border-radius: 2px;
+        }
+
+        p, li {
+            font-size: 15px;
+        }
+
+        p {
+            margin-bottom: 16px;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .app-card {
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 16px;
+        }
+
+        .app-card h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin: 0 0 8px;
+        }
+
+        .app-card p {
+            margin: 0;
+            color: var(--sub-text-color);
+            font-size: 14px;
+        }
+
+        .footer {
+            margin-top: 48px;
+            font-size: 13px;
+            color: var(--sub-text-color);
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+            padding-top: 16px;
+        }
+    </style>
 </head>
 <body>
-  <h1>Rinrin-o Apps</h1>
-  <p>個人開発アプリの公式サイトです。</p>
-  <ul>
-    <li>マイカラオケリスト — カラオケの持ち歌・歌唱履歴を管理するiOSアプリ</li>
-  </ul>
-  <p><a href="/privacy-policy/">プライバシーポリシー</a></p>
+
+<div class="container">
+    <h1>Rinrin-o Apps</h1>
+
+    <p>個人開発しているスマートフォンアプリの公式サイトです。</p>
+
+    <h2>開発者について</h2>
+    <p>こんにちは、Rinrin-o です👋</p>
+    <ul>
+        <li>早稲田大学大学院（2027年卒業予定）で、VR関連の研究を行っています。</li>
+        <li>2027年4月から国内でWeb系エンジニアとして勤務予定です。</li>
+    </ul>
+    <p>GitHub: <a href="https://github.com/Rinrin-o" target="_blank" rel="noopener noreferrer">github.com/Rinrin-o</a></p>
+
+    <h2>アプリ</h2>
+    <div class="app-card">
+        <h3>マイカラオケリスト</h3>
+        <p>カラオケの持ち歌・歌唱履歴・アーティストをまとめて管理できるiOSアプリ。歌った記録を残して、称号を集めながら自分だけのカラオケリストを育てられます。</p>
+    </div>
+
+    <h2>各種リンク</h2>
+    <ul>
+        <li><a href="/privacy-policy/">プライバシーポリシー</a></li>
+        <li><a href="https://forms.gle/DRUteEFUxXzYBo4E8" target="_blank" rel="noopener noreferrer">お問い合わせフォーム</a></li>
+    </ul>
+
+    <div class="footer">
+        <p>&copy; 2026 Rinrin-o</p>
+    </div>
+</div>
+
 </body>
 </html>
